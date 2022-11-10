@@ -1,0 +1,41 @@
+$txt-color: #fff;
+
+.hero{
+    
+    color: $txt-color;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    max-height: 800px;
+    position: relative;
+    
+    display: grid;
+    grid-template-rows: 100px 1fr;
+
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../images/banner-tommy.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*     clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0); */
+}
+
+.hero__container{
+    max-width: 800px;
+    --padding-container: 0;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+
+    .hero__title{
+        font-size: 3rem;
+    }
+
+    .hero__paragraph{
+        margin-bottom: 30px;
+    }
+}
